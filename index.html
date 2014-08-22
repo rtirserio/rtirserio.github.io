@@ -1,6 +1,585 @@
-<!doctype html>
-<html>
-  <body>
-    <p>comming soon...</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rob Tirserio</title>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <style>
+            body {
+    font-family: 'Lato';
+    background: #F0F0F0;
+    color: #333;
+}
+
+.main {
+	padding: 5px;
+}
+
+.card {
+	background: white;
+	border: 1px solid #E6E6E6;
+    border-radius: 3px;
+    min-height: 300px;
+    padding: 10px;
+}
+
+.card-nested {
+    min-height: 0;
+    margin-bottom: 10px;
+    border-width: 1px 0 0 0;
+}
+
+.card-work-experience:last-child {
+    margin-bottom: 0;
+}
+
+.background-card {
+    padding: 10px 20px;
+}
+
+.card-wrapper {
+    padding: 5px;
+}
+
+.profile-pic {
+    padding: 20px 0;
+}
+
+.text-bolder {
+    font-weight: bold;
+}
+
+.contact-details .detail {
+    display: table;
+    padding: 10px 0;
+}
+
+.contact-details .detail .icon {
+    padding: 0 10px;
+    color: #707070;
+}
+
+.contact-details .detail .icon, .contact-details .detail .info {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.contact-details .detail .info{
+	font-size: 0.8em;
+}
+
+.social-link {
+	margin-left: 5px;
+}
+
+.social-link:first-child {
+	margin-left: 0;
+}
+
+.social-link:hover {
+	text-decoration: none;
+}
+
+.link-github {
+	color: #454545;
+}
+
+.link-github:hover {
+    color: black;
+}
+
+.link-twitter {
+    color: #33CCFF;
+}
+
+.link-blog {
+	color: rgb(243, 111, 36);
+}
+
+.link-blog:hover {
+	color: rgb(211, 97, 32);
+}
+
+.background-details .detail {
+	display: table;
+	padding: 10px 0;
+}
+
+.background-details .detail .icon {
+	min-width: 45px;
+	max-width: 45px;
+	text-align: center;
+}
+
+.background-details .detail .title, .background-details .detail .icon {
+	color: # 707070;
+}
+
+.background-details .detail .icon,
+.background-details .detail .info {
+    display: table-cell;
+    padding: 0 10px;
+}
+
+.background-details .detail .info {
+    width: 100% ;
+}
+
+.timeline-circle {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #e2e2e2;
+    border-radius: 50% ;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.timeline-content {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.clear-margin {
+    margin: 0;
+}
+
+.space-top {
+    margin-top: 10px;
+}
+
+.info .content.has-sidebar {
+    width: 80% ;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 10px;
+}
+
+.info .sidebar {
+    margin-left: 80% ;
+    box-sizing: border-box;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <script>
+            window.onload = function () {
+                $(".background-card").css( "min-height", window.screen.availHeight + "px" );
+            }
+        </script>
+        <div class="container-fluid">
+            <div class="row main clearfix">
+                <section class="col-md-3 card-wrapper affix">
+                    <div class="card profile-card">
+                        <div class="profile-pic">
+                            <img class="media-object img-circle center-block"  data-src="holder.js/64x64"
+                                alt="64x64" src="http://www.gravatar.com/avatar/12bf4947cd440daceddb877886906f14?s=100&amp;r=pg&amp;d=mm" style="width: 100px; height: 100px;">
+                        </div>
+                        
+                            <h3 class="text-center text-bolder"> Rob Tirserio</h3>
+                            <h5 class="text-muted text-center">Developer</h5>
+                            <hr>
+
+                            <div class="contact-details clearfix">
+
+                                
+                                    <div class="detail">
+                                        <span class="icon">
+                                            <i class="fa fa-lg fa-location-arrow"></i>
+                                        </span>
+
+                                        
+                                            <span class="info">
+                                                Washington, ,
+                                                US
+                                            </span>
+                                        
+                                    </div>
+                                
+
+                                
+                                    <div class="detail">
+                                        <span class="icon">
+                                            <i class="fa fa-lg fa-phone"></i>
+                                        </span>
+
+                                        <span class="info">
+                                            (202) 813-0082
+                                        </span>
+                                    </div>
+                                
+
+                                
+                                    <div class="detail">
+                                        <span class="icon">
+                                            <i class="fa fa-lg fa-envelope"></i>
+                                        </span>
+
+                                        <span class="info">
+                                            rtirserio@gmail.com
+                                        </span>
+                                    </div>
+                                
+
+                                
+                            </div>
+
+                            <hr>
+
+                            <div class="social-links text-center">
+                                
+                                    <a class="fa fa-github fa-2x social-link link-github"
+                                           href="http://www.github.com/rtirserio" target="_blank"></a>
+                                
+                                
+                                    <a class="fa fa-twitter fa-2x social-link link-twitter"
+                                           href="http://www.twitter.com/roberttirserio" target="_blank"></a>
+                                
+                                
+                                    <a class="fa fa-rss fa-2x social-link link-blog"
+                                           href="http://rtirserio.github.io" target="_blank"></a>
+                                
+                            </div>
+                        
+                    </div>
+                </section>
+
+                <section class="col-md-9 card-wrapper pull-right">
+                    <div class="card background-card">
+                        <h4 class="text-uppercase text-bolder">Background</h4>
+                        <hr>
+
+                        <div class="background-details">
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-user"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        About
+                                    </h4>
+
+                                    <div class="content">
+                                        Hi, I&#x27;m Rob. I&#x27;ve been a software developer for about 10 years. The majority of that time was spent creating web applications using Java and Grails, a Groovy based MVC framework. More recently, I&#x27;ve been working with Node.js, Angular.js, and a little Ruby on Rails.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-building"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Work Experience
+                                    </h4>
+
+                                    <ul class="list-unstyled">
+                                        
+                                            <li class="card card-nested clearfix">
+                                                <div class="content has-sidebar">
+                                                    <p><strong>Application Developer</strong>,&nbsp;Development Infostructure Inc.</p>
+                                                    <p>At Devis, I was primarly a technical team lead and developer on a variety of web based applications, primarly for federal government clients.</p>
+                                                    
+                                                        <ul>
+                                                            
+                                                                <li> Developed software solutions using variety of languages, frameworks, and technologies. </li>
+                                                            
+                                                                <li> Translated client requirements into user stories and tasks for the development team </li>
+                                                            
+                                                                <li> Mentored other developers using design sessions and pair programming sessions. Topics ranged from architecting implementations to correctly adding unit tests. </li>
+                                                            
+                                                                <li> Created prototypes for high risk features on projects as well as using new technologies. I also presented findings of these prototypes to other developers and management. </li>
+                                                            
+                                                                <li> Responsible for developing solutions from the front-end to database layers of the stack. </li>
+                                                            
+                                                                <li> Identified, tested, and recommended new technologies to the organization for farther investigation and implementation. </li>
+                                                            
+                                                                <li> Assisted in evaluating RFP/RFIs and crafting the response. Delivered an oral presentation on behalf of the organization during a project bid. </li>
+                                                            
+                                                        </ul>
+                                                    
+                                                </div>
+
+                                                <div class="sidebar text-muted text-center">
+                                                    <p>
+                                                        <strong>Joined:</strong>&nbsp;
+                                                        Sep, 2004
+                                                    </p>
+                                                    <p>
+                                                        
+                                                            <span class="label label-success">
+                                                                Currently Working
+                                                            </span>
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        (9 years 10 months)
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        
+                                            <li class="card card-nested clearfix">
+                                                <div class="content has-sidebar">
+                                                    <p><strong>Senior Software Engineer</strong>,&nbsp;Soundbite Communications</p>
+                                                    <p>At Soundbite, I was the lone developer maintaining their mobile website CMS product.</p>
+                                                    
+                                                        <ul>
+                                                            
+                                                                <li> Performed maintenance and added new features to a mature Java based web application. </li>
+                                                            
+                                                                <li> Created a prototype using Bootstrap for rendering mobile sites which mapped existing control definition to standard Bootstrap controls. </li>
+                                                            
+                                                                <li> Facilitated the release management of the application by using Maven for creating release artifacts, preparing database scripts, and documenting release procedures. </li>
+                                                            
+                                                                <li> Used ab (Apache Bench) to measure requests per second and made modifications to the application to improve this metric. </li>
+                                                            
+                                                                <li> Assisted and supported clients who encountered issues using the application. </li>
+                                                            
+                                                        </ul>
+                                                    
+                                                </div>
+
+                                                <div class="sidebar text-muted text-center">
+                                                    <p>
+                                                        <strong>Joined:</strong>&nbsp;
+                                                        Jul, 2012
+                                                    </p>
+                                                    <p>
+                                                        
+                                                            <strong>Left:</strong>&nbsp;
+                                                            Mar, 2013
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        (8 months)
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-code"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Skills
+                                    </h4>
+
+                                    <div class="content">
+                                        <ul class="list-unstyled">
+                                            
+                                                <li class="card card-nested">
+                                                    <strong>Programming Languages</strong>
+
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">Java</span>
+                                                        
+                                                            <span class="label label-primary">Groovy</span>
+                                                        
+                                                            <span class="label label-primary">C#</span>
+                                                        
+                                                            <span class="label label-primary">Javascript</span>
+                                                        
+                                                            <span class="label label-primary">Ruby</span>
+                                                        
+                                                            <span class="label label-primary">Objective-C</span>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                                <li class="card card-nested">
+                                                    <strong>Frameworks</strong>
+
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">Grails</span>
+                                                        
+                                                            <span class="label label-primary">Spring</span>
+                                                        
+                                                            <span class="label label-primary">Hibernate</span>
+                                                        
+                                                            <span class="label label-primary">.NET / .NET MVC</span>
+                                                        
+                                                            <span class="label label-primary">Node.js</span>
+                                                        
+                                                            <span class="label label-primary">Ruby on Rails</span>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                                <li class="card card-nested">
+                                                    <strong>Databases</strong>
+
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">Postgres</span>
+                                                        
+                                                            <span class="label label-primary">MySQL</span>
+                                                        
+                                                            <span class="label label-primary">SQL Server</span>
+                                                        
+                                                            <span class="label label-primary">Oracle</span>
+                                                        
+                                                            <span class="label label-primary">MongoDB</span>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                                <li class="card card-nested">
+                                                    <strong>Web Development</strong>
+
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">HTML</span>
+                                                        
+                                                            <span class="label label-primary">CSS</span>
+                                                        
+                                                            <span class="label label-primary">Sass</span>
+                                                        
+                                                            <span class="label label-primary">JQuery</span>
+                                                        
+                                                            <span class="label label-primary">Angular.js</span>
+                                                        
+                                                            <span class="label label-primary">Bootstrap</span>
+                                                        
+                                                            <span class="label label-primary">Foundation</span>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                                <li class="card card-nested">
+                                                    <strong>Configuration Management</strong>
+
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">Vagrant</span>
+                                                        
+                                                            <span class="label label-primary">Puppet</span>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                                <li class="card card-nested">
+                                                    <strong>Version Control</strong>
+
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">Git</span>
+                                                        
+                                                            <span class="label label-primary">Subversion</span>
+                                                        
+                                                            <span class="label label-primary">CVS</span>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-mortar-board"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Education
+                                    </h4>
+
+                                    <div class="content">
+                                        <ul class="list-unstyled">
+                                            
+                                                <li class="card card-nested">
+                                                    <p>
+                                                        <strong>Computer Science, Bachelor</strong>,&nbsp;
+                                                        Juniata College
+                                                        <small class="text-muted pull-right">
+                                                            2000-09-01 - 2004-05-01
+                                                        </small>
+                                                    </p>
+                                                    <div class="space-top">
+                                                        
+                                                    </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                                <div class="detail">
+                                    <div class="icon">
+                                        <i class="fa fa-lg fa-trophy"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h4 class="title text-uppercase">
+                                            Awards
+                                        </h4>
+
+                                        <div class="content">
+                                            <ul class="list-unstyled">
+                                                
+                                                    <li class="card card-nested">
+                                                        <p>
+                                                            <strong>Sun Certified Java Programmer (SCJP)</strong>,&nbsp;
+                                                            Sun Microsystems
+                                                            <small class="pull-right text-muted">2008-02-01</small>
+                                                        </p>
+                                                        <p class="clear-margin">  </p>
+                                                    </li>
+                                                
+                                                    <li class="card card-nested">
+                                                        <p>
+                                                            <strong>Certified Secure Software Lifecycle Professional (CSSLP)</strong>,&nbsp;
+                                                            ISC2
+                                                            <small class="pull-right text-muted">2009-02-01</small>
+                                                        </p>
+                                                        <p class="clear-margin">  </p>
+                                                    </li>
+                                                
+                                                    <li class="card card-nested">
+                                                        <p>
+                                                            <strong>M101JS: MongoDB for Node.js Developers</strong>,&nbsp;
+                                                            MongoDB Inc.
+                                                            <small class="pull-right text-muted">2013-12-14</small>
+                                                        </p>
+                                                        <p class="clear-margin">  </p>
+                                                    </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </body>
 </html>
