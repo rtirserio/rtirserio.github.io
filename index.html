@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rob Tirserio</title>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <style>
       .clear-margin {
   margin: 0;
@@ -285,6 +285,10 @@ body {
     padding: 10px 0;
   }
 }
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
 @media (max-width: 992px) {
   .name {
     margin-top: 10px;
@@ -345,8 +349,13 @@ body {
     width: 25%;
   }
 }
+.social-links {
+  line-height: 2.5;
+}
 .social-link {
   margin-left: 5px;
+  min-width: 35px;
+  display: inline-block;
 }
 .social-link:first-child {
   margin-left: 0;
@@ -357,32 +366,146 @@ body {
 .link-github {
   color: #454545;
 }
-.link-github:hover {
+.link-github:hover,
+.link-github:focus {
+  text-decoration: none;
   color: #2b2b2b;
 }
 .link-twitter {
   color: #33ccff;
 }
-.link-twitter:hover {
+.link-twitter:hover,
+.link-twitter:focus {
+  text-decoration: none;
   color: #00bfff;
 }
 .link-blog {
   color: #f36f24;
 }
-.link-blog:hover {
+.link-blog:hover,
+.link-blog:focus {
+  text-decoration: none;
   color: #d8560c;
 }
 .link-linkedin {
   color: #007bb6;
 }
-.link-linkedin:hover {
+.link-linkedin:hover,
+.link-linkedin:focus {
+  text-decoration: none;
   color: #005983;
 }
 .link-skype {
   color: #12a5f4;
 }
-.link-skype:hover {
+.link-skype:hover,
+.link-skype:focus {
+  text-decoration: none;
   color: #0986ca;
+}
+.link-stackoverflow {
+  color: #8e8e92;
+}
+.link-stackoverflow:hover,
+.link-stackoverflow:focus {
+  text-decoration: none;
+  color: #747479;
+}
+.link-soundcloud {
+  color: #e8822d;
+}
+.link-soundcloud:hover,
+.link-soundcloud:focus {
+  text-decoration: none;
+  color: #cc6916;
+}
+.link-pinterest {
+  color: #bd091f;
+}
+.link-pinterest:hover,
+.link-pinterest:focus {
+  text-decoration: none;
+  color: #8c0717;
+}
+.link-vimeo {
+  color: #17b3e8;
+}
+.link-vimeo:hover,
+.link-vimeo:focus {
+  text-decoration: none;
+  color: #128fba;
+}
+.link-behance {
+  color: #2c98cf;
+}
+.link-behance:hover,
+.link-behance:focus {
+  text-decoration: none;
+  color: #2379a5;
+}
+.link-codepen {
+  color: #1c1c1c;
+}
+.link-codepen:hover,
+.link-codepen:focus {
+  text-decoration: none;
+  color: #020202;
+}
+.link-foursquare {
+  color: #fa4778;
+}
+.link-foursquare:hover,
+.link-foursquare:focus {
+  text-decoration: none;
+  color: #f91554;
+}
+.link-reddit {
+  color: #545454;
+}
+.link-reddit:hover,
+.link-reddit:focus {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+.link-spotify {
+  color: #acd200;
+}
+.link-spotify:hover,
+.link-spotify:focus {
+  text-decoration: none;
+  color: #829f00;
+}
+.link-dribbble {
+  color: #ce366f;
+}
+.link-dribbble:hover,
+.link-dribbble:focus {
+  text-decoration: none;
+  color: #a82959;
+}
+.link-facebook {
+  color: #4b6daa;
+}
+.link-facebook:hover,
+.link-facebook:focus {
+  text-decoration: none;
+  color: #3b5687;
+}
+.link-angellist {
+  color: #000000;
+}
+.link-angellist:hover,
+.link-angellist:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-bitbucket {
+  color: #205081;
+}
+.link-bitbucket:hover,
+.link-bitbucket:focus {
+  text-decoration: none;
+  color: #163758;
 }
 .card-skills {
   position: relative;
@@ -432,11 +555,47 @@ body {
     font-size: inherit;
   }
 }
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .profile-card {
+    text-align: center;
+  }
+  .profile-pic {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .profile-pic img {
+    border-radius: 0;
+  }
+  .name-and-profession {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 25%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0;
+  }
+  .floating-nav,
+  .floating-nav-trigger {
+    display: none;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+}
 
     </style>
   </head>
 
-  <body>
+  <body itemscope itemtype="http://schema.org/Person">
     <script>
       window.onload = function () {
         var toggleFloatingMenu = function() {
@@ -496,12 +655,17 @@ body {
 
         <section class="col-md-3 card-wrapper profile-card-wrapper affix">
           <div class="card profile-card">
-              <div class="profile-pic">
-                <img class="media-object img-circle center-block"  data-src="holder.js/64x64"
-                  alt="64x64" src="http://www.gravatar.com/avatar/12bf4947cd440daceddb877886906f14?s=100&amp;r=pg&amp;d=mm" style="width: 100px; height: 100px;">
-              </div>
-              <h3 class="text-center text-bolder name"> Rob Tirserio</h3>
-              <h5 class="text-muted text-center">Developer</h5>
+              <span class="profile-pic-container">
+                <div class="profile-pic">
+                  <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
+                    alt="Rob Tirserio" src="http://www.gravatar.com/avatar/12bf4947cd440daceddb877886906f14?s=100&amp;r=pg&amp;d=mm" itemprop="image">
+                </div>
+
+                <div class="name-and-profession">
+                  <h3 class="text-center text-bolder name" itemprop="name"> Rob Tirserio</h3>
+                  <h5 class="text-muted text-center" itemprop="jobTitle">Developer</h5>
+                </div>
+              </span>
               <hr>
 
               <div class="contact-details clearfix">
@@ -522,7 +686,7 @@ body {
                       <i class="fa fa-lg fa-phone"></i>
                     </span>
 
-                    <span class="info">
+                    <span class="info" itemprop="telephone">
                       (202) 813-0082
                     </span>
                   </div>
@@ -533,7 +697,7 @@ body {
                     </span>
 
                     <span class="info">
-                      <a href="mailto:rtirserio@gmail.com" class="link-disguise">rtirserio@gmail.com</a>
+                      <a href="mailto:rtirserio@gmail.com" class="link-disguise" itemprop="email">rtirserio@gmail.com</a>
                     </span>
                   </div>
 
@@ -543,9 +707,9 @@ body {
 
               <div class="social-links text-center">
                   <a class="fa fa-github fa-2x social-link link-github"
-                       href="http://www.github.com/rtirserio" target="_blank"></a>
+                       href="//github.com/rtirserio" target="_blank"></a>
                   <a class="fa fa-twitter fa-2x social-link link-twitter"
-                       href="http://www.twitter.com/roberttirserio" target="_blank"></a>
+                       href="//twitter.com/roberttirserio" target="_blank"></a>
                   <a class="fa fa-rss fa-2x social-link link-blog"
                        href="http://rtirserio.github.io" target="_blank"></a>
               </div>
@@ -568,8 +732,8 @@ body {
                     About
                   </h4>
 
-                  <div class="content">
-                    Hi, I&#x27;m Rob. I&#x27;ve been a software developer for 10 years. The majority of that time was spent creating web applications using Java and Grails, a Groovy based MVC framework. Recently, I&#x27;ve been creating web applications using Node.js, Angular.js, and Ruby on Rails.
+                  <div class="content" itemprop="description">
+                    Hi, I&#x27;m Rob. I&#x27;ve been a software developer since 2004. During that time, I have worked with a variety of technologies to create web applications and APIs.
                   </div>
                 </div>
               </div>
@@ -588,7 +752,8 @@ body {
                       <li class="card card-nested clearfix">
                         <div class="content has-sidebar">
                           <p class="clear-margin-sm">
-                            <strong>Application Developer</strong>,&nbsp;Development Infostructure Inc.
+                            <strong>Application Developer</strong>,&nbsp;
+                              <a href="http://devis.com"  target="_blank">Development Infostructure Inc.</a>
                           </p>
                           <p class="text-muted visible-xs visible-sm">
                             <small>
@@ -596,13 +761,14 @@ body {
                                 Sep, 2004 -
                                   Present
                               </span>
-                              <span>
-                                <i class="fa fa-clock-o icon-left"></i>
-                                10 years 2 months
-                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  10 years 4 months
+                                </span>
                             </small>
                           </p>
-                          <p>At Devis, I was primarly a technical team lead and developer on a variety of web based applications developed using agile and scrum methodologies mostly for federal government clients.</p>
+                          <p>At Devis, I am a technical team lead and developer on a variety of web based applications developed using agile and scrum methodologies.</p>
                             <ul>
                                 <li> Developed software solutions using variety of languages, frameworks, technologies. </li>
                                 <li> Integrated applications and 3rd party APIs using REST and SOAP. </li>
@@ -617,25 +783,27 @@ body {
                         </div>
 
                         <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                          <p>
-                            <strong>Joined:</strong>&nbsp;
-                            Sep, 2004
-                          </p>
-                          <p>
-                              <span class="label label-success">
-                                Currently Working
-                              </span>
-                          </p>
-                          <p>
-                            <i class="fa fa-clock-o icon-left"></i>
-                            10 years 2 months
-                          </p>
+                            <p>
+                              <strong>Joined:</strong>&nbsp;
+                              Sep, 2004
+                            </p>
+
+                            <p>
+                                <span class="label label-success">
+                                  Currently Working
+                                </span>
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              10 years 4 months
+                            </p>
                         </div>
                       </li>
                       <li class="card card-nested clearfix">
                         <div class="content has-sidebar">
                           <p class="clear-margin-sm">
-                            <strong>Senior Software Engineer</strong>,&nbsp;Soundbite Communications
+                            <strong>Senior Software Engineer</strong>,&nbsp;
+                              <a href="http://soundbite.com"  target="_blank">Soundbite Communications</a>
                           </p>
                           <p class="text-muted visible-xs visible-sm">
                             <small>
@@ -643,10 +811,11 @@ body {
                                 Jul, 2012 -
                                   Mar, 2013
                               </span>
-                              <span>
-                                <i class="fa fa-clock-o icon-left"></i>
-                                8 months
-                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  8 months
+                                </span>
                             </small>
                           </p>
                           <p>At Soundbite, I was the lone developer maintaining their mobile website CMS product.</p>
@@ -654,24 +823,25 @@ body {
                                 <li> Performed maintenance and added new features to a mature Java based web application. </li>
                                 <li> Created a prototype using Bootstrap for rendering mobile sites which mapped existing control definition to standard Bootstrap controls. </li>
                                 <li> Facilitated the release management of the application by using Maven for creating release artifacts, preparing database scripts, and documenting release procedures. </li>
-                                <li> Used ab (Apache Bench) to measure requests per second and made modifications to the application to improve this metric. </li>
-                                <li> Assisted and supported clients who encountered issues using the application. </li>
+                                <li> Measured request performance using ab (Apache Bench) modified the application to improve this metric. </li>
+                                <li> Assisted and supported clients who encountered issues using the product. </li>
                             </ul>
                         </div>
 
                         <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                          <p>
-                            <strong>Joined:</strong>&nbsp;
-                            Jul, 2012
-                          </p>
-                          <p>
-                              <strong>Left:</strong>&nbsp;
-                              Mar, 2013
-                          </p>
-                          <p>
-                            <i class="fa fa-clock-o icon-left"></i>
-                            8 months
-                          </p>
+                            <p>
+                              <strong>Joined:</strong>&nbsp;
+                              Jul, 2012
+                            </p>
+
+                            <p>
+                                <strong>Left:</strong>&nbsp;
+                                Mar, 2013
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              8 months
+                            </p>
                         </div>
                       </li>
                   </ul>
@@ -831,7 +1001,7 @@ body {
                       <ul class="list-unstyled">
                           <li class="card card-nested">
                             <div class="content has-sidebar">
-                              <p class="clear-margin-sm">
+                              <p class="clear-margin-sm" itemprop="award">
                                 <strong>Sun Certified Java Programmer (SCJP)</strong>,&nbsp;
                                 Sun Microsystems
                               </p>
@@ -851,7 +1021,7 @@ body {
                           </li>
                           <li class="card card-nested">
                             <div class="content has-sidebar">
-                              <p class="clear-margin-sm">
+                              <p class="clear-margin-sm" itemprop="award">
                                 <strong>Certified Secure Software Lifecycle Professional (CSSLP)</strong>,&nbsp;
                                 ISC2
                               </p>
@@ -871,7 +1041,7 @@ body {
                           </li>
                           <li class="card card-nested">
                             <div class="content has-sidebar">
-                              <p class="clear-margin-sm">
+                              <p class="clear-margin-sm" itemprop="award">
                                 <strong>M101JS: MongoDB for Node.js Developers</strong>,&nbsp;
                                 MongoDB Inc.
                               </p>
@@ -891,7 +1061,7 @@ body {
                           </li>
                           <li class="card card-nested">
                             <div class="content has-sidebar">
-                              <p class="clear-margin-sm">
+                              <p class="clear-margin-sm" itemprop="award">
                                 <strong>M102: MongoDB for DBAs</strong>,&nbsp;
                                 MongoDB Inc.
                               </p>
@@ -924,8 +1094,8 @@ body {
       </div>
     </div>
 
-    <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
   </body>
 </html>
