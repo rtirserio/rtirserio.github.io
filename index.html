@@ -418,6 +418,14 @@ body {
   text-decoration: none;
   color: #0986ca;
 }
+.link-instagram {
+  color: #3f729b;
+}
+.link-instagram:hover,
+.link-instagram:focus {
+  text-decoration: none;
+  color: #305777;
+}
 .link-stackoverflow {
   color: #8e8e92;
 }
@@ -425,6 +433,22 @@ body {
 .link-stackoverflow:focus {
   text-decoration: none;
   color: #747479;
+}
+.link-stackexchange {
+  color: #62b0df;
+}
+.link-stackexchange:hover,
+.link-stackexchange:focus {
+  text-decoration: none;
+  color: #389bd6;
+}
+.link-lastfm {
+  color: #d12127;
+}
+.link-lastfm:hover,
+.link-lastfm:focus {
+  text-decoration: none;
+  color: #a51a1f;
 }
 .link-soundcloud {
   color: #e8822d;
@@ -705,7 +729,7 @@ body {
               <span class="profile-pic-container">
                 <div class="profile-pic">
                   <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
-                    alt="Rob Tirserio" src="http://www.gravatar.com/avatar/12bf4947cd440daceddb877886906f14?s=100&amp;r=pg&amp;d=mm" itemprop="image">
+                    alt="Rob Tirserio" src="//www.gravatar.com/avatar/12bf4947cd440daceddb877886906f14?s=100&amp;r=pg&amp;d=mm" itemprop="image">
                 </div>
 
                 <div class="name-and-profession">
@@ -721,11 +745,9 @@ body {
                     <span class="icon">
                       <i class="fa fa-lg fa-location-arrow"></i>
                     </span>
-
-                      <span class="info">
-                        Washington, DC,
-                        US
-                      </span>
+                    <span class="info">
+                      Washington, DC, US
+                    </span>
                   </div>
 
                   <div class="detail">
@@ -744,7 +766,7 @@ body {
                     </span>
 
                     <span class="info">
-                      <a href="/cdn-cgi/l/email-protection#0f7d7b667d7c6a7d66604f68626e6663216c6062" class="link-disguise" itemprop="email"><span class="__cf_email__" data-cfemail="aedcdac7dcddcbdcc7c1eec9c3cfc7c280cdc1c3">[email&#160;protected]</span><script cf-hash='f9e31' type="text/javascript">
+                      <a href="/cdn-cgi/l/email-protection#deacaab7acadbbacb7b19eb9b3bfb7b2f0bdb1b3" class="link-disguise" itemprop="email"><span class="__cf_email__" data-cfemail="c2b0b6abb0b1a7b0abad82a5afa3abaeeca1adaf">[email&#160;protected]</span><script cf-hash='f9e31' type="text/javascript">
 /* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></a>
                     </span>
                   </div>
@@ -810,6 +832,32 @@ body {
                           <p class="clear-margin relative">
                               <i class="fa fa-circle current-event"
                                  rel="tooltip" title="Currently Working" data-placement="left"></i>
+                            <strong>Tech Lead</strong>,&nbsp;
+                              <a href="http://manalto.com"  target="_blank">Manalto Inc.</a>
+                          </p>
+                          <p class="text-muted">
+                            <small>
+                              <span class="space-right">
+                                May, 2015 -
+                                  Present
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  2 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>At Manalto, I am a technical tech lead and developer on the organization&#x27;s social media management platform and tools.</p>
+                            <ul>
+                                <li> Developed API and Web front-end of social media management product. </li>
+                                <li> Integrated API with various 3rd party services. </li>
+                            </ul>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content">
+                          <p class="clear-margin relative">
                             <strong>Application Developer</strong>,&nbsp;
                               <a href="http://devis.com"  target="_blank">Development Infostructure Inc.</a>
                           </p>
@@ -817,16 +865,16 @@ body {
                             <small>
                               <span class="space-right">
                                 Sep, 2004 -
-                                  Present
+                                  May, 2015
                               </span>
 
                                 <span>
                                   <i class="fa fa-clock-o icon-left"></i>
-                                  10 years 6 months
+                                  10 years 7 months
                                 </span>
                             </small>
                           </p>
-                          <p>At Devis, I am a technical team lead and developer on a variety of web based applications developed using agile and scrum methodologies.</p>
+                          <p>At Devis, I was a technical team lead and developer on a variety of web based applications developed using agile and scrum methodologies.</p>
                             <ul>
                                 <li> Developed software solutions using variety of languages, frameworks, technologies. </li>
                                 <li> Integrated applications and 3rd party APIs using REST and SOAP. </li>
@@ -873,100 +921,101 @@ body {
                 </div>
               </div>
 
-              <div class="detail" id="skills">
-                <div class="icon">
-                  <i class="fa fa-lg fa-code"></i>
-                  <span class="mobile-title">Skills</span>
-                </div>
-                <div class="info">
-                  <h4 class="title text-uppercase">
-                    Skills
-                  </h4>
+                <div class="detail" id="skills">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-code"></i>
+                    <span class="mobile-title">Skills</span>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Skills
+                    </h4>
 
-                  <div class="content">
-                    <ul class="list-unstyled">
-                        <li class="card card-nested card-skills">
-                          <div class="skill-info">
-                            <strong>Programming Languages</strong>
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested card-skills">
+                            <div class="skill-info">
+                              <strong>Programming Languages</strong>
 
-                            <div class="space-top labels">
-                                <span class="label label-keyword">Java</span>
-                                <span class="label label-keyword">Groovy</span>
-                                <span class="label label-keyword">C#</span>
-                                <span class="label label-keyword">Javascript</span>
-                                <span class="label label-keyword">Ruby</span>
-                                <span class="label label-keyword">Objective-C</span>
+                              <div class="space-top labels">
+                                  <span class="label label-keyword">Javascript</span>
+                                  <span class="label label-keyword">Ruby</span>
+                                  <span class="label label-keyword">Java</span>
+                                  <span class="label label-keyword">Groovy</span>
+                                  <span class="label label-keyword">C#</span>
+                                  <span class="label label-keyword">Objective-C</span>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                          <div class="skill-info">
-                            <strong>Frameworks</strong>
+                          </li>
+                          <li class="card card-nested card-skills">
+                            <div class="skill-info">
+                              <strong>Frameworks</strong>
 
-                            <div class="space-top labels">
-                                <span class="label label-keyword">Grails</span>
-                                <span class="label label-keyword">Spring</span>
-                                <span class="label label-keyword">Hibernate</span>
-                                <span class="label label-keyword">Node.js</span>
-                                <span class="label label-keyword">Express.js</span>
-                                <span class="label label-keyword">Ruby on Rails</span>
-                                <span class="label label-keyword">.NET / .NET MVC</span>
+                              <div class="space-top labels">
+                                  <span class="label label-keyword">Node.js</span>
+                                  <span class="label label-keyword">Express.js</span>
+                                  <span class="label label-keyword">Ruby on Rails</span>
+                                  <span class="label label-keyword">Grails</span>
+                                  <span class="label label-keyword">Spring</span>
+                                  <span class="label label-keyword">Hibernate</span>
+                                  <span class="label label-keyword">.NET / .NET MVC</span>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                          <div class="skill-info">
-                            <strong>Databases</strong>
+                          </li>
+                          <li class="card card-nested card-skills">
+                            <div class="skill-info">
+                              <strong>Databases</strong>
 
-                            <div class="space-top labels">
-                                <span class="label label-keyword">Postgres</span>
-                                <span class="label label-keyword">MySQL</span>
-                                <span class="label label-keyword">SQL Server</span>
-                                <span class="label label-keyword">Oracle</span>
-                                <span class="label label-keyword">MongoDB</span>
+                              <div class="space-top labels">
+                                  <span class="label label-keyword">Postgres</span>
+                                  <span class="label label-keyword">MySQL</span>
+                                  <span class="label label-keyword">SQL Server</span>
+                                  <span class="label label-keyword">Oracle</span>
+                                  <span class="label label-keyword">MongoDB</span>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                          <div class="skill-info">
-                            <strong>Web Development</strong>
+                          </li>
+                          <li class="card card-nested card-skills">
+                            <div class="skill-info">
+                              <strong>Web Development</strong>
 
-                            <div class="space-top labels">
-                                <span class="label label-keyword">HTML</span>
-                                <span class="label label-keyword">CSS</span>
-                                <span class="label label-keyword">Sass</span>
-                                <span class="label label-keyword">JQuery</span>
-                                <span class="label label-keyword">Angular.js</span>
-                                <span class="label label-keyword">Bootstrap</span>
-                                <span class="label label-keyword">Foundation</span>
+                              <div class="space-top labels">
+                                  <span class="label label-keyword">HTML</span>
+                                  <span class="label label-keyword">CSS</span>
+                                  <span class="label label-keyword">Sass</span>
+                                  <span class="label label-keyword">LESS</span>
+                                  <span class="label label-keyword">JQuery</span>
+                                  <span class="label label-keyword">Angular.js</span>
+                                  <span class="label label-keyword">Bootstrap</span>
+                                  <span class="label label-keyword">Foundation</span>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                          <div class="skill-info">
-                            <strong>Configuration Management</strong>
+                          </li>
+                          <li class="card card-nested card-skills">
+                            <div class="skill-info">
+                              <strong>Configuration Management</strong>
 
-                            <div class="space-top labels">
-                                <span class="label label-keyword">Vagrant</span>
-                                <span class="label label-keyword">Puppet</span>
+                              <div class="space-top labels">
+                                  <span class="label label-keyword">Vagrant</span>
+                                  <span class="label label-keyword">Puppet</span>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                          <div class="skill-info">
-                            <strong>Version Control</strong>
+                          </li>
+                          <li class="card card-nested card-skills">
+                            <div class="skill-info">
+                              <strong>Version Control</strong>
 
-                            <div class="space-top labels">
-                                <span class="label label-keyword">Git</span>
-                                <span class="label label-keyword">Subversion</span>
-                                <span class="label label-keyword">CVS</span>
+                              <div class="space-top labels">
+                                  <span class="label label-keyword">Git</span>
+                                  <span class="label label-keyword">Subversion</span>
+                                  <span class="label label-keyword">CVS</span>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                    </ul>
+                          </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
 
               <div class="detail" id="education">
                 <div class="icon">
