@@ -1,0 +1,11 @@
+baseURL = "https://rtirserio.github.io/"
+title = "Rob Tirserio"
+theme = "PaperMod"
+
+[params]
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+
+[markup.highlight]
+  style = "monokai"
